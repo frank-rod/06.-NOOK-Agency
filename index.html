@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nook Agency - Crea, Posiciona y Crece</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="home-banner">
+        <header class="header">
+            <div class="logo">
+                <img src="./Media/logos nook/parafondonegro.png" alt="Nook Agency Logo">
+            </div>
+
+            <!-- Hamburger Menu Button para móvil -->
+            <button class="mobile-menu-btn" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Servicios <span class="arrow-down">˅</span></a></li>
+                    <li><a href="#">Portafolio</a></li>
+                    <li><a href="#">Meet our team</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="hero">
+            <div class="hero-content">
+                <h1>Crea,<br>Posiciona<br>y Crece.</h1>
+                <p>Social Media Management<br>& MKT Strategies</p>
+                <a href="#servicios" class="cta-btn" aria-label="Ver más">
+                    <svg width="180" height="24" viewBox="0 0 180 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="0" y1="12" x2="180" y2="12"></line>
+                        <polyline points="173 5 180 12 173 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>CANCÚN &nbsp;|&nbsp; RIVIERA MAYA &nbsp;|&nbsp; MÉRIDA</p>
+        </footer>
+    </div>
+
+    <!-- Separador Servicios -->
+    <div class="servicios-marquee" id="servicios">
+        <div class="marquee-track">
+            <span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span><span>SERVICIOS</span>
+        </div>
+    </div>
+
+    <!-- Servicios Section -->
+    <section class="servicios-section">
+        <div class="carousel">
+            <div class="carousel-image-container">
+                <img class="carousel-image active" src="./Media/servicios/Contenido.png" alt="Contenido">
+                <img class="carousel-image" src="./Media/servicios/Estrategias Integrales.png" alt="Estrategias Integrales">
+                <img class="carousel-image" src="./Media/servicios/Manejo de pautas publicitarias.png" alt="Manejo de pautas publicitarias">
+                <img class="carousel-image" src="./Media/servicios/estrategiasorganicas.png" alt="Estrategias Orgánicas">
+            </div>
+
+            <div class="carousel-buttons">
+                <button class="carousel-btn active" data-index="0">
+                    <h3 class="carousel-btn-pill">Contenido</h3>
+                    <p class="carousel-btn-desc">Creación de contenido visual y estratégico para tus redes sociales.</p>
+                    <div class="carousel-progress"><span class="carousel-progress-bar"></span></div>
+                </button>
+                <button class="carousel-btn" data-index="1">
+                    <h3 class="carousel-btn-pill">Estrategias Integrales</h3>
+                    <p class="carousel-btn-desc">Planificación integral de marketing digital para tu marca.</p>
+                    <div class="carousel-progress"><span class="carousel-progress-bar"></span></div>
+                </button>
+                <button class="carousel-btn" data-index="2">
+                    <h3 class="carousel-btn-pill">Manejo de Pautas</h3>
+                    <p class="carousel-btn-desc">Gestión y optimización de campañas publicitarias pagadas.</p>
+                    <div class="carousel-progress"><span class="carousel-progress-bar"></span></div>
+                </button>
+                <button class="carousel-btn" data-index="3">
+                    <h3 class="carousel-btn-pill">Estrategias Orgánicas</h3>
+                    <p class="carousel-btn-desc">Crecimiento orgánico y posicionamiento natural en redes.</p>
+                    <div class="carousel-progress"><span class="carousel-progress-bar"></span></div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="algo.js"></script>
+</body>
+</html>
