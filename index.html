@@ -28,8 +28,7 @@
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#">Servicios <span class="arrow-down">˅</span></a></li>
                     <li><a href="#">Portafolio</a></li>
-                    <li><a href="#">Meet our team</a></li>
-                    <li><a href="#">Contacto</a></li>
+<li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -93,6 +92,137 @@
             </div>
         </div>
     </section>
+
+    <!-- Portafolio Section -->
+    <section class="portafolio-section">
+        <div class="portafolio-grid">
+            <!-- Left: Marquee images -->
+            <div class="portafolio-marquees">
+                <div class="img-marquee img-marquee--reverse">
+                    <div class="img-marquee-track">
+                        <div class="img-marquee-item"><img src="./Media/portafolio/1.png" alt="Portafolio 1"></div>
+                        <div class="img-marquee-item"><img src="./Media/portafolio/2.png" alt="Portafolio 2"></div>
+                        <div class="img-marquee-item"><img src="./Media/portafolio/3.png" alt="Portafolio 3"></div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="img-marquee-item"><img src="./Media/portafolio/1.png" alt="Portafolio 1"></div>
+                        <div class="img-marquee-item"><img src="./Media/portafolio/2.png" alt="Portafolio 2"></div>
+                        <div class="img-marquee-item"><img src="./Media/portafolio/3.png" alt="Portafolio 3"></div>
+                    </div>
+                </div>
+                <div class="img-marquee">
+                    <div class="img-marquee-track">
+                        <div class="img-marquee-item"><img src="./Media/portafolio/4.png" alt="Portafolio 4"></div>
+                        <div class="img-marquee-item"><img src="./Media/portafolio/5.png" alt="Portafolio 5"></div>
+                        <div class="img-marquee-item"><img src="./Media/portafolio/6.png" alt="Portafolio 6"></div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="img-marquee-item"><img src="./Media/portafolio/4.png" alt="Portafolio 4"></div>
+                        <div class="img-marquee-item"><img src="./Media/portafolio/5.png" alt="Portafolio 5"></div>
+                        <div class="img-marquee-item"><img src="./Media/portafolio/6.png" alt="Portafolio 6"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Content -->
+            <div class="portafolio-content">
+                <h2 class="portafolio-title">Nuestro Portafolio</h2>
+                <p class="portafolio-subtitle">Nook Agency</p>
+                <p class="portafolio-desc">Estrategias digitales que crean, posicionan y hacen crecer tu marca.</p>
+                <button class="scramble-btn">Ver Instagram</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contacto-section">
+        <div class="contacto-grid">
+            <div class="contacto-image">
+                <img src="./Media/LetreroChido.png" alt="Nook Agency">
+            </div>
+            <div class="contacto-container">
+                <h2 class="contacto-title">Contáctanos</h2>
+                <p class="contacto-subtitle">Cuéntanos sobre tu proyecto y te contactamos por WhatsApp.</p>
+
+                <form id="contacto-form" class="contacto-form">
+                <div class="form-group">
+                    <label for="servicio">Servicio de interés</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="" disabled selected>Selecciona un servicio</option>
+                        <option value="Creación de contenido">Creación de contenido</option>
+                        <option value="Sesión de foto y video">Sesión de foto y video</option>
+                        <option value="Cobertura de eventos">Cobertura de eventos</option>
+                        <option value="Estrategias orgánicas">Estrategias orgánicas</option>
+                        <option value="Pautas publicitarias">Pautas publicitarias</option>
+                        <option value="Contenido orgánico">Contenido orgánico</option>
+                        <option value="Social Media">Social Media</option>
+                        <option value="Estrategias integrales">Estrategias integrales</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="empresa">Marca / Empresa</label>
+                    <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu marca o empresa">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+                </div>
+
+                <button type="submit" class="contacto-submit">
+                    Enviar por WhatsApp
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.613.613l4.458-1.495A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.387 0-4.593-.838-6.328-2.236l-.442-.362-3.258 1.092 1.092-3.258-.362-.442A9.956 9.956 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/>
+                    </svg>
+                </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <div class="site-footer-left">
+                <img src="./Media/logos nook/parafondonegro.png" alt="Nook Agency Logo" class="site-footer-logo">
+                <p class="site-footer-slogan">Your in-house support, outsourced.</p>
+            </div>
+            <div class="site-footer-right">
+                <div class="site-footer-col">
+                    <h4>Contacto</h4>
+                    <a href="https://wa.me/529982327232" target="_blank">+52 998 232 7232</a>
+                    <a href="https://www.instagram.com/thesocialnook.mx/" target="_blank">@thesocialnook.mx</a>
+                </div>
+                <div class="site-footer-col">
+                    <h4>Ubicaciones</h4>
+                    <p>Cancún</p>
+                    <p>Riviera Maya</p>
+                    <p>Mérida</p>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer-bottom">
+            <p>&copy; 2026 Nook Agency. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/529982327232" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="#fff" width="28" height="28">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.613.613l4.458-1.495A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.387 0-4.593-.838-6.328-2.236l-.442-.362-3.258 1.092 1.092-3.258-.362-.442A9.956 9.956 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/>
+        </svg>
+    </a>
 
     <script src="algo.js"></script>
 </body>

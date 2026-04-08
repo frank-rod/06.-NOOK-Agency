@@ -77,4 +77,59 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     frame = requestAnimationFrame(animate);
+
+    // --- Scramble Button ---
+    const scrambleBtn = document.querySelector('.scramble-btn');
+    if (scrambleBtn) {
+        const originalText = scrambleBtn.textContent;
+        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
+        let isScrambling = false;
+
+        scrambleBtn.addEventListener('mouseenter', () => {
+            if (isScrambling) return;
+            isScrambling = true;
+            let iteration = 0;
+            const maxIterations = originalText.length;
+
+            const interval = setInterval(() => {
+                scrambleBtn.textContent = originalText
+                    .split('')
+                    .map((letter, index) => {
+                        if (index < iteration) return originalText[index];
+                        return chars[Math.floor(Math.random() * chars.length)];
+                    })
+                    .join('');
+
+                if (iteration >= maxIterations) {
+                    clearInterval(interval);
+                    isScrambling = false;
+                }
+                iteration += 1 / 3;
+            }, 30);
+        });
+    }
+
+    // --- Contact Form → WhatsApp ---
+    const contactForm = document.getElementById('contacto-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const servicio = document.getElementById('servicio').value;
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const empresa = document.getElementById('empresa').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            const text = `¡Hola Nook Agency! 👋\n\n` +
+                `*Servicio de interés:* ${servicio}\n` +
+                `*Nombre:* ${nombre}\n` +
+                `*Email:* ${email}\n` +
+                `*Marca / Empresa:* ${empresa}\n` +
+                `*Mensaje:* ${mensaje}`;
+
+            const url = `https://wa.me/529982327232?text=${encodeURIComponent(text)}`;
+            window.open(url, '_blank');
+        });
+    }
 });
