@@ -12,12 +12,19 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     width: 100%;
     min-height: 100vh;
     font-family: var(--body-font);
     color: var(--text-color);
     background-color: #0b1a2e; /* Fallback de color oscuro */
+}
+
+body {
     overflow-x: hidden;
 }
 
@@ -28,7 +35,7 @@ body {
 
 .home-banner {
     min-height: 100vh;
-    background-image: url('./Media/banner.png');
+    background-image: url('./Media/banner.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -438,6 +445,7 @@ body {
 .scramble-btn {
     display: inline-flex;
     align-self: flex-start;
+    text-decoration: none;
     justify-content: center;
     align-items: center;
     margin-top: 0.5rem;
@@ -741,7 +749,7 @@ body {
     }
 
 .logo img {
-    height: 38px;
+    height: 53px;
 }
 
     .navbar {

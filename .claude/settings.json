@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find Media -type f \\\\\\( -name \"*.png\" -o -name \"*.jpg\" -o -name \"*.jpeg\" -o -name \"*.webp\" \\\\\\) -exec ls -lh {} \\\\;)",
+      "Read(//Users/frank/Desktop/Webs/06. NOOK Agency/**)",
+      "Bash(python3 -c \"from PIL import Image; print\\('pillow ok'\\)\")",
+      "Bash(brew install:*)",
+      "Bash(cwebp -q 80 \"Media/banner.png\" -o \"Media/banner.webp\")",
+      "Bash(cwebp -q 80 \"Media/LetreroChido.png\" -o \"Media/LetreroChido.webp\")",
+      "Bash(cwebp -q 80 \"Media/logos nook/parafondonegro.png\" -o \"Media/logos nook/parafondonegro.webp\")",
+      "Bash(cwebp -q 80 \"Media/servicios/Contenido.png\" -o \"Media/servicios/Contenido.webp\")",
+      "Bash(cwebp -q 80 \"Media/servicios/Estrategias Integrales.png\" -o \"Media/servicios/Estrategias Integrales.webp\")",
+      "Bash(cwebp -q 80 \"Media/servicios/Manejo de pautas publicitarias.png\" -o \"Media/servicios/Manejo de pautas publicitarias.webp\")",
+      "Bash(cwebp -q 80 \"Media/servicios/estrategiasorganicas.png\" -o \"Media/servicios/estrategiasorganicas.webp\")",
+      "Bash(cwebp -q 80 Media/portafolio/__TRACKED_VAR__.png -o Media/portafolio/__TRACKED_VAR__.webp)",
+      "Bash(ls -lh Media/banner.png Media/LetreroChido.png \"Media/logos nook/parafondonegro.png\" Media/servicios/*.png Media/portafolio/*.png)",
+      "Bash(ls -lh Media/banner.webp Media/LetreroChido.webp \"Media/logos nook/parafondonegro.webp\" Media/servicios/*.webp Media/portafolio/*.webp)"
+    ]
+  }
+}

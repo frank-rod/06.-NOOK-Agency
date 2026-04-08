@@ -7,6 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
             mobileMenuBtn.classList.toggle('active');
             navbar.classList.toggle('active');
         });
+
+        // Close mobile menu when clicking a nav link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                navbar.classList.remove('active');
+            });
+        });
     }
 
     // --- Progressive Carousel ---
